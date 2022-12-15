@@ -3,6 +3,9 @@ import { motion } from 'framer-motion'
 import { animated, useSpring } from 'react-spring'
 import { MdOutlineBackHand } from 'react-icons/md'
 import { useTranslation, Trans } from 'react-i18next'
+import { FaGithub } from 'react-icons/fa'
+
+
 
 const animationThree = {
 	in: {
@@ -44,7 +47,7 @@ export const Abouts = () => {
 
 	return (
 		<motion.div initial='out' animate='in' exit='out' variants={animationThree} transition={{ duration: 0.4 }}>
-			<div className=' mt-10  '>
+			<div className=' mt-10 flex flex-col items-center '>
 				<div className=" flex items-center justify-center m-4">
 					{Object.keys(langs).map((lng) => (
 						<button
@@ -81,6 +84,10 @@ export const Abouts = () => {
 						</h2> 
 					</Trans>
 				</div>
+				<a href='https://github.com/ceziCoder'>
+					<FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
+					<span className=''>github</span>
+				</a>
 			</div>
 		</motion.div>
 	)

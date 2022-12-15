@@ -3,7 +3,7 @@ import { GiBrain } from "react-icons/gi"
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
-import { FaGithub } from 'react-icons/fa'
+
 import { motion } from 'framer-motion'
 import Typed from 'react-typed'
 
@@ -52,10 +52,7 @@ export const Main = () => {
 					</div>
 				</div>
 
-				<a href='https://github.com/ceziCoder'>
-					<FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-2'></FaGithub>
-					<span className=''>github</span>
-				</a>
+				
 			</div>
 		</motion.div>
 	)
