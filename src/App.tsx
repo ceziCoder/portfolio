@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import { Home } from './page/Home'
 import React from 'react'
@@ -16,24 +16,28 @@ import i18n from './i18n'
 
 
 export const App = () => {
+  const shouldRedirect = true
 
   const {t, i18n} =useTranslation()
+  
 
   return (
     <>
       <I18nextProvider i18n={i18n}>
       <Router>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode='wait' exitBeforeEnter>
 
           <Routes>
             <Route path='/'element={<Shared/>}>
               <Route index  element={<Home/>}/>
-              <Route path='umiejetnosci' element={<Skill />} />
-              <Route path='o' element={<About />} />
+                <Route path='umiejetnosci' element={ <Skill /> } >
+                
+              </Route>
+                <Route path='o' element={ <About />  } />
 
-              <Route path='/contact' element={<Contact />} />
+                <Route path='/contact' element={<Contact /> } />
 
-              <Route path='*' element={<ErrorPage />} />
+                <Route path='*' element={!shouldRedirect   ? <ErrorPage /> : <Navigate to='/'/>} />
             </Route>
           </Routes>
         </AnimatePresence>

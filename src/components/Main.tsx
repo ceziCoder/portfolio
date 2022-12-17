@@ -6,6 +6,10 @@ import { useEffect } from 'react'
 
 import { motion } from 'framer-motion'
 import Typed from 'react-typed'
+import img1 from '../public/cezi.jpg'
+
+
+
 
 export const Main = () => {
 	const animationThree = {
@@ -41,7 +45,7 @@ export const Main = () => {
 						loop></Typed>
 					
 					<img
-						src='./src/assets/cezi.jpg'
+						src={img1}
 						className='h-[80px] w-[80px]  rounded-full  m-auto object-cover shadow-2xl'></img>
 					
 					<br />

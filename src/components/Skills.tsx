@@ -6,6 +6,12 @@ import { DiLinux, DiNodejsSmall } from 'react-icons/di'
 import { GiBookmarklet } from 'react-icons/gi'
 import {motion} from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
+import img2 from '../public/ts.png'
+import img3 from '../public/r.png'
+import img4 from '../public/tw.png'
+import img5 from '../public/l.png'
+import img6 from '../public/n.png'
+import img7 from '../public/e.png'
 
 const langs: string | any = {
   en: { nativeName: 'English' },
@@ -45,12 +51,12 @@ export const Skills = () => {
               <li className='mb-8'>umiejętności:</li>
               </Trans>
           <span className='flex items-center text-lg m-2'>
-            <img src='./src/assets/ts.png' className='h-6 w-6' />
+            <img src={img2} className='h-6 w-6' />
             <li className='ml-2'>Typescript</li>
             <h2 className=''>------- 15%</h2>
           </span>
           <span className='flex items-center text-lg  m-2'>
-            <img src='./src/assets/r.png' className='h-7 w-7' />
+            <img src={img3} className='h-7 w-7' />
             <li className='ml-2'>React</li>
             <h2 className=''>------- 30%</h2>
           </span>
@@ -59,25 +65,25 @@ export const Skills = () => {
 
           <hr className='' />
           <span className='flex items-center text-lg m-2'>
-            <img src='./src/assets/tw.png' className='h-8 w-8' />
+            <img src={img4} className='h-8 w-8' />
             <li className='ml-1'>Tailwind</li>
             <h2 className=''>------- 70%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-lg m-2'>
-            <img src='./src/assets/l.png' className='h-6 w-6' />
+            <img src={img5}className='h-6 w-6' />
             <li className='ml-4'>Linux</li>
             <h2 className=''>------- 20%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-lg  m-2'>
-            <img src='./src/assets/n.png' className='h-8 w-8' />
+            <img src={img6} className='h-8 w-8' />
             <li className='ml-2'>Node.js</li>
             <h2 className=''>------- 15%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-lg m-2'>
-            <img src='./src/assets/e.png' className='h-7 w-7' />
+            <img src={img7} className='h-7 w-7' />
             <li className='ml-2'>English</li>
             <h2 className=''>------- 30%</h2>
           </span>
