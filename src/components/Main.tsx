@@ -39,7 +39,7 @@ export const Main = () => {
 
 					<Typed
 						className='flex items-center justify-center ml-2 text-black/50 font-extrabold m-4 '
-						strings={['Cezary Lachut']}
+						strings={['Cezary Łachut']}
 						typeSpeed={600}
 						backSpeed={600}
 						loop></Typed>

@@ -16,14 +16,14 @@ const i18n = i18next
 			pl: {
 				translation: {
 					description:
-						' Jestem programistycznym samoukiem, nie byłem na żadnym bootcampie. Moja przygoda zaczęła się od prob implementacji oprogramowania Osmocom do Motoroli c118. Do nauki zachęcił mnie kolega programista.Ucze sie od okolo roku HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js,w nauce pomagaja mi narzedzia AI i Stack Overflow.  Moj plus to że nigdy się nie poddaję. Mam jednak wadę wielowątkowości myśleniowa,  Lubię rozwiązywać problemy, dlatego lubię programowanie.',
+						"Jestem samoukiem programistą, nie byłem na żadnym bootcampie. Moja przygoda rozpoczęła się od implementacji aplikacji Osmocom do telefonu Motorola c118 w środowisku Unix. Mój kolega, programista, zachęcił mnie do nauki. Od około roku uczę się HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js, Express, Git, Vite.js, w nauce pomagają mi dokumentacja, YouTube, Stack Overflow i narzędzia AI. Moim atutem jest to, że nigdy się nie poddaję. Jednak mam słabość do myślenia wielowątkowego. Lubię rozwiązywać problemy, jeśli nie bedzie internetu, zacznę czytać książki o programowaniu i rozwiążę problem, dlatego lubię programowanie",
 					skill: 'umiejętności:',
 				},
 			},
 			en: {
 				translation: {
 					description:
-						'I am a self-taught programmer. I was not in any bootcamp. My journey began with the implementation of Osmocom software for Motorola C118. I was motivated by my friend programmer to never give up. However, I have a disadvantage in multi-threading. I enjoy problem-solving, which is why I like programming.',
+						'I am a self-taught programmer, I have not been to any bootcamp. My adventure started with the implementation of the Osmocom application to the Motorola c118 phone in the Unix environment. My colleague, a programmer, encouraged me to learn. I have been learning HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js, Express, Git, Vite.js for about a year, documentation, YouTube, Stack Overflow, and AI tools help me in learning. My plus is that I never give up. However, I have a weakness for multitasking thinking. I like to solve problems, if there is no internet, I will start reading books on programming and solve the problem, that s why I like programming.',
 					skill: 'skills:',
 				},
 			},

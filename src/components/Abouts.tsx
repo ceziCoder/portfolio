@@ -32,31 +32,25 @@ export const Abouts = () => {
 	const navigate = useNavigate()
 
 	useEffect(() => {
-
-
 		const handleKeyDown = (event: any) => {
-
-			if (event.altKey && event.key === 'ArrowLeft')
-			{
-
+			if (event.altKey && event.key === 'ArrowLeft') {
 				navigate('/o')
 			}
 		}
-        
+
 		window.addEventListener('keydown', handleKeyDown)
 
 		return () => {
 			window.removeEventListener('keydown', handleKeyDown)
 		}
-
-	}), [navigate] 
+	}),
+		[navigate]
 
 	const animation = useSpring({
 		from: { rotate: 0 },
 		to: async (next) => {
 			// Animate the rotation of the hand back and forth
-			while (true)
-			{
+			while (true) {
 				await next({ rotate: -15 })
 				await next({ rotate: 15 })
 				await next({ rotate: -15 })
@@ -92,16 +86,16 @@ export const Abouts = () => {
 					</div>
 					<Trans i18nKey='description'>
 						<h2 className='break-words'>
-							Jestem programistycznym samoukiem, nie byłem na żadnym bootcampie. Moja przygoda zaczęła się od prob
-							implementacji oprogramowania Osmocom do Motoroli c118. Do nauki zachęcił mnie kolega programista.Ucze sie
-							od okolo roku HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js,w nauce pomagaja mi narzedzia AI
-							i Stack Overflow. Moj plus to że nigdy się nie poddaję. Mam jednak wadę wielowątkowości myśleniowa, Lubię
-							rozwiązywać problemy,jak nie bedzie internetu zaczne czytac ksiazki o programowaniu i rozwize problem,
-							dlatego lubię programowanie.
+							Jestem programistycznym samoukiem, nie byłem na żadnym bootcampie. Moja przygoda zaczela od implementacji
+							aplikacji Osmocom do telefonu Motorola c118 w srodowisku Unix . Do nauki zachęcił mnie kolega
+							programista.Ucze sie od okolo roku HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js Git,
+							Vite.js ,w nauce pomagaja mi dokumetacja, youtube Stack Overflow, narzedzia Ai. Moj plus to że nigdy się
+							nie poddaję. Mam jednak wadę wielowątkowości myśleniowa, Lubię rozwiązywać problemy,jak nie bedzie
+							internetu zaczne czytac ksiazki o programowaniu i rozwize problem, dlatego lubię programowanie.
 						</h2>
 					</Trans>
 				</div>
-				<a href='https://github.com/ceziCoder' onClick={()=> navigate('/o')} >
+				<a href='https://github.com/ceziCoder' onClick={() => navigate('/o')}>
 					<FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
 					<span className=''>github</span>
 				</a>

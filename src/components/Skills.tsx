@@ -67,7 +67,7 @@ export const Skills = () => {
           <span className='flex items-center text-lg m-2'>
             <img src={img4} className='h-8 w-8' />
             <li className='ml-1'>Tailwind</li>
-            <h2 className=''>------- 70%</h2>
+            <h2 className=''>------- 30%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-lg m-2'>
