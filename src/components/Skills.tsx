@@ -12,7 +12,8 @@ import img4 from '../public/tw.png'
 import img5 from '../public/l.png'
 import img6 from '../public/n.png'
 import img7 from '../public/e.png'
-
+import img8 from '../public/mdb.png'
+import img9 from '../public/git.png'
 const langs: string | any = {
   en: { nativeName: 'English' },
   pl: { nativeName: 'polski' }
@@ -81,12 +82,26 @@ export const Skills = () => {
             <li className='ml-2'>Node.js</li>
             <h2 className=''>------- 15%</h2>
           </span>
-          <hr className='' />
-          <span className='flex items-center text-lg m-2'>
-            <img src={img7} className='h-7 w-7' />
-            <li className='ml-2'>English</li>
-            <h2 className=''>------- 30%</h2>
-          </span>
+          
+              <hr className='' />
+              <span className='flex items-center text-lg m-2'>
+                <img src={img8} className='h-7 w-7' />
+                <li className='ml-2'>Mongodb</li>
+                <h2 className=''>------- 15%</h2>
+              </span>
+              <hr className='' />
+              <span className='flex items-center text-lg m-2'>
+                <img src={img9} className='h-7 w-7' />
+                <li className='ml-2'>Git</li>
+                <h2 className=''>------- 15%</h2>
+              </span>
+
+              <hr className='' />
+              <span className='flex items-center text-lg m-2'>
+                <img src={img7} className='h-7 w-7' />
+                <li className='ml-2'>English</li>
+                <h2 className=''>------- 30%</h2>
+              </span>
 
         </ul>
           </div>
