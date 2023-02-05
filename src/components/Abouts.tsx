@@ -77,15 +77,15 @@ export const Abouts = () => {
 					))}
 				</div>
 
-				<div className='overflow-visible p-4 m-auto w-[70%] h-full shadow-2xl flex flex-col items-center justify-center '>
+				<div className='overflow-visible p-4 m-auto w-[70%] h-full shadow-2xl flex flex-col items-center justify-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-600'>
 					<div className='flex items-center  w-20 p-2 gap-3'>
-						<h1 className='italic break-words text-xl'>Hej</h1>
+						<h1 className='italic break-words text-xl   '>Hej</h1>
 						<animated.div style={animation} className=''>
 							<MdOutlineBackHand size={22} />
 						</animated.div>
 					</div>
 					<Trans i18nKey='description'>
-						<h2 className='break-words'>
+						<h2 className=''>
 							Jestem programistycznym samoukiem, nie byłem na żadnym bootcampie. Moja przygoda zaczela od implementacji
 							aplikacji Osmocom do telefonu Motorola c118 w srodowisku Unix . Do nauki zachęcił mnie kolega
 							programista.Ucze sie od okolo roku HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js Git,

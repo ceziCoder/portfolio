@@ -15,6 +15,7 @@ import i18n from './i18n'
 
 
 
+
 export const App = () => {
   const shouldRedirect = true
 
@@ -28,16 +29,18 @@ export const App = () => {
         <AnimatePresence mode='wait' exitBeforeEnter>
 
           <Routes>
+             
             <Route path='/'element={<Shared/>}>
               <Route index  element={<Home/>}/>
                 <Route path='umiejetnosci' element={ <Skill /> } >
-                
+               
               </Route>
                 <Route path='o' element={ <About />  } />
 
                 <Route path='/contact' element={<Contact /> } />
 
                 <Route path='*' element={!shouldRedirect   ? <ErrorPage /> : <Navigate to='/'/>} />
+              
             </Route>
           </Routes>
         </AnimatePresence>

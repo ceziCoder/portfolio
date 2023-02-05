@@ -51,17 +51,14 @@ export const Skills = () => {
           <Trans i18nKey='skill'>
               <li className='mb-8'>umiejętności:</li>
               </Trans>
-          <span className='flex items-center text-lg m-2'>
-            <img src={img2} className='h-6 w-6' />
-            <li className='ml-2'>Typescript</li>
-            <h2 className=''>------- 15%</h2>
-          </span>
-          <span className='flex items-center text-lg  m-2'>
-            <img src={img3} className='h-7 w-7' />
-            <li className='ml-2'>React</li>
-            <h2 className=''>------- 30%</h2>
-          </span>
+              <span className='flex items-center text-lg  m-2'>
+                <img src={img3} className='h-7 w-7' />
+                <li className='ml-2'>React</li>
+                <h2 className=''>------- 15%</h2>
+              </span>
+              <hr className='' />
 
+         
 
 
           <hr className='' />
@@ -80,14 +77,14 @@ export const Skills = () => {
           <span className='flex items-center text-lg  m-2'>
             <img src={img6} className='h-8 w-8' />
             <li className='ml-2'>Node.js</li>
-            <h2 className=''>------- 15%</h2>
+            <h2 className=''>------- 10%</h2>
           </span>
           
               <hr className='' />
               <span className='flex items-center text-lg m-2'>
                 <img src={img8} className='h-7 w-7' />
                 <li className='ml-2'>Mongodb</li>
-                <h2 className=''>------- 15%</h2>
+                <h2 className=''>------- 10%</h2>
               </span>
               <hr className='' />
               <span className='flex items-center text-lg m-2'>
@@ -95,6 +92,13 @@ export const Skills = () => {
                 <li className='ml-2'>Git</li>
                 <h2 className=''>------- 15%</h2>
               </span>
+              <hr className='' />
+              <span className='flex items-center text-lg m-2'>
+                <img src={img2} className='h-6 w-6' />
+                <li className='ml-2'>Typescript</li>
+                <h2 className=''>------- 10%</h2>
+              </span>
+
 
               <hr className='' />
               <span className='flex items-center text-lg m-2'>

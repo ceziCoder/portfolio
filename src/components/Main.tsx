@@ -46,12 +46,12 @@ export const Main = () => {
 					
 					<img
 						src={img1}
-						className='h-[80px] w-[80px]  rounded-full  m-auto object-cover shadow-2xl'></img>
+						className='h-[80px] w-[80px]  rounded-full  m-auto object-cover shadow-2xl  '></img>
 					
 					<br />
 
 					<div className=' p-4 m-auto w-[80%] h-60 shadow-2xl flex items-center justify-center '>
-						<p className='italic'>'Hello world'</p>
+						<p className='italic bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-600'>'Hello world'</p>
 						<p className='break-words'></p>
 					</div>
 				</div>
