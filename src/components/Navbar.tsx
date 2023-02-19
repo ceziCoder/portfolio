@@ -4,7 +4,7 @@ import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
 import { Skills } from './Skills'
-import { AiFillHome } from 'react-icons/ai'
+import { AiFillHome, AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { GiSkills } from 'react-icons/gi'
 import { MdContactMail } from 'react-icons/md'
 import { FaUserAlt } from 'react-icons/fa'
@@ -92,9 +92,15 @@ export const Navbar = () => {
 							<VscTools size={27} style={{ color: 'white' }} />
 						</Link>
 					</span>
+				
 					<span className=''>
 						<Link to='/contact'>
 							<MdContactMail size={34} style={{ color: 'white' }} />
+						</Link>
+					</span>
+					<span className=''>
+						<Link to='/project'>
+							<AiOutlineFundProjectionScreen size={34} style={{ color: 'white' }} />
 						</Link>
 					</span>
 
