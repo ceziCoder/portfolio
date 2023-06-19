@@ -14,6 +14,7 @@ import img6 from '../public/n.png'
 import img7 from '../public/e.png'
 import img8 from '../public/mdb.png'
 import img9 from '../public/git.png'
+import img10 from '../public/express.png'
 const langs: string | any = {
   en: { nativeName: 'English' },
   pl: { nativeName: 'polski' }
@@ -54,7 +55,7 @@ export const Skills = () => {
               <span className='flex items-center text-lg  m-2'>
                 <img src={img3} className='h-7 w-7' />
                 <li className='ml-2'>React</li>
-                <h2 className=''>------- 15%</h2>
+                <h2 className=''>------- 20%</h2>
               </span>
               <hr className='' />
 
@@ -77,14 +78,20 @@ export const Skills = () => {
           <span className='flex items-center text-lg  m-2'>
             <img src={img6} className='h-8 w-8' />
             <li className='ml-2'>Node.js</li>
-            <h2 className=''>------- 10%</h2>
+            <h2 className=''>------- 15%</h2>
           </span>
+              <hr className='' />
+              <span className='flex items-center text-lg m-2'>
+                <img src={img10} className='h-8 w-8' />
+                <li className='ml-1'>Express</li>
+                <h2 className=''>------- 15%</h2>
+              </span>
           
               <hr className='' />
               <span className='flex items-center text-lg m-2'>
                 <img src={img8} className='h-7 w-7' />
                 <li className='ml-2'>Mongodb</li>
-                <h2 className=''>------- 10%</h2>
+                <h2 className=''>------- 15%</h2>
               </span>
               <hr className='' />
               <span className='flex items-center text-lg m-2'>
