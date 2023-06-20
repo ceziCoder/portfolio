@@ -35,7 +35,7 @@ export const Projects = () => {
                     <p className='italic bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-600'>
                         <h4 className='m-4'>Project:</h4>
                         
-                        <a href='https://cezi-chat-gpt.vercel.app'>Cezi-ChatGPT</a>
+                        <a target='_blank' href='https://cezi-chat-gpt.vercel.app'>Cezi-ChatGPT</a>
                         <hr></hr>
                     </p>
                     <p className='break-words'></p>

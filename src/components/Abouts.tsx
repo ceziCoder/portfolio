@@ -95,7 +95,7 @@ export const Abouts = () => {
 						</h2>
 					</Trans>
 				</div>
-				<a href='https://github.com/ceziCoder' onClick={() => navigate('/o')}>
+				<a href='https://github.com/ceziCoder' target='_blank' onClick={() => navigate('/o')}>
 					<FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
 					<span className=''>github</span>
 				</a>
