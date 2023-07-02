@@ -39,6 +39,13 @@ export const Projects = () => {
                         <hr></hr>
                     </p>
                     <p className='break-words'></p>
+                    <p className='italic bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-600'>
+                        <h4 className='m-4'>Project:</h4>
+
+                        <a target='_blank' href='image-uploader-client-blush.vercel.app'>Image-uploader</a>
+                        <hr></hr>
+                    </p>
+                    <p className='break-words'></p>
                 </div>
 
 
