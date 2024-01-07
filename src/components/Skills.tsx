@@ -15,6 +15,9 @@ import img7 from '../public/e.png'
 import img8 from '../public/mdb.png'
 import img9 from '../public/git.png'
 import img10 from '../public/express.png'
+import img11 from '../public/rN.png'
+import img12 from '../public/expo.svg'
+
 const langs: string | any = {
   en: { nativeName: 'English' },
   pl: { nativeName: 'polski' }
@@ -58,9 +61,19 @@ export const Skills = () => {
                 <h2 className=''>------- 20%</h2>
               </span>
               <hr className='' />
-
+              <span className='flex items-center text-lg m-2'>
+                <img src={img11} className='h-7 w-7' />
+                <li className='ml-2'>React-Native</li>
+                <h2 className=''>------- 20%</h2>
+              </span>
+              <hr className='' />
          
-
+              <span className='flex items-center text-lg m-2'>
+                <img src={img12} className='h-12 w-12' />
+                <li className='ml-2'>Expo</li>
+                <h2 className=''>------- 20%</h2>
+              </span>
+              <hr className='' />
 
           <hr className='' />
           <span className='flex items-center text-lg m-2'>

@@ -13,6 +13,10 @@ import { useTranslation, Trans } from 'react-i18next'
 import { I18nextProvider } from 'react-i18next'
 import i18n from './i18n'
 import { Project } from './page/Project'
+import { Screen } from './components/Screen'
+import { Data } from './components/Data'
+
+
 
 
 
@@ -38,11 +42,10 @@ export const App = () => {
                 <Route path='o' element={ <About />  } />
               
                 <Route path='/project' element={<Project />} />
-                
-
+               
                 <Route path='/contact' element={<Contact /> } />
               
-
+                <Route path='/screen' element={<Screen/> } />
                 <Route path='*' element={!shouldRedirect   ? <ErrorPage /> : <Navigate to='/'/>} />
               
           </Route>
