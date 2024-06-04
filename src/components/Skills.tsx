@@ -17,6 +17,7 @@ import img9 from '../public/git.png'
 import img10 from '../public/express.png'
 import img11 from '../public/rN.png'
 import img12 from '../public/expo.svg'
+import img13 from '../public/wp.png'
 
 const langs: string | any = {
   en: { nativeName: 'English' },
@@ -55,6 +56,11 @@ export const Skills = () => {
           <Trans i18nKey='skill'>
               <li className='mb-8'>umiejętności:</li>
               </Trans>
+              <span className='flex items-center text-lg  m-2'>
+                <img src={img13} className='h-10 w-10' />
+                <li className='ml-2'>WordPress</li>
+                <h2 className=''>------- 20%</h2>
+              </span>
               <span className='flex items-center text-lg  m-2'>
                 <img src={img3} className='h-7 w-7' />
                 <li className='ml-2'>React</li>
