@@ -1,34 +1,29 @@
-import React from 'react'
-import { Link, useNavigate, NavLink } from 'react-router-dom'
-import { BiMenu } from 'react-icons/bi'
-import { AiOutlineClose } from 'react-icons/ai'
-import { useState, useEffect } from 'react'
-import { Skills } from './Skills'
-import { AiFillHome, AiOutlineFundProjectionScreen } from 'react-icons/ai'
-import { GiSkills } from 'react-icons/gi'
-import { MdContactMail } from 'react-icons/md'
-import { FaUserAlt } from 'react-icons/fa'
-import { VscTools } from 'react-icons/vsc'
-import axios, { Axios } from 'axios'
-import i18n from '../i18n'
-import { useTranslation, Trans } from 'react-i18next'
-
-
+import React from "react";
+import { Link, useNavigate, NavLink } from "react-router-dom";
+import { BiMenu } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState, useEffect } from "react";
+import { Skills } from "./Skills";
+import { AiFillHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { GiSkills } from "react-icons/gi";
+import { MdContactMail } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
+import { VscTools } from "react-icons/vsc";
+import axios, { Axios } from "axios";
+import i18n from "../i18n";
+import { useTranslation, Trans } from "react-i18next";
+import { GiKeyCard } from "react-icons/gi";
+import { GrCpu } from "react-icons/gr";
 
 const langs: string | any = {
-	en: { nativeName: 'English' },
-	pl: { nativeName: 'polski' }
-}
-
+  en: { nativeName: "English" },
+  pl: { nativeName: "polski" },
+};
 
 export const Navbar = () => {
+  const { t, i18n } = useTranslation();
 
-	const { t, i18n } = useTranslation()
-
-
-
-
-	/*
+  /*
 	type WeatherData = {
 		main: {
 			temp: number
@@ -71,43 +66,52 @@ export const Navbar = () => {
 
 
 	*/
-	return (
-		<div className=' sticky top-0  backdrop-blur-sm bg-gradient-to-r from-black/70 to-white w-full h-[60px] shadow-xl shadow-green z-[100]  '>
-			<div className='flex  items-center  justify-around w-full h-full px-2 2xl:px-16  '>
-				<div className='w-full  flex items-center justify-around'>
-				
-					<span className=''>
-						<Link to='/' className=''>
-							<AiFillHome className='' size={29} style={{ color: 'white' }} />
-						</Link>
-					</span>
-					<span className=''>
-						<Link to='/o'>
-							<FaUserAlt size={25} style={{ color: 'white' }} />
-						</Link>
-					</span>
+  return (
+    <div className=" sticky top-0  backdrop-blur-sm bg-gradient-to-r from-black/70 to-white w-full h-[60px] shadow-xl shadow-green z-[100]  ">
+      <div className="flex  items-center  justify-around w-full h-full px-2 2xl:px-16  ">
+        <div className="w-full  flex items-center justify-around">
+          <span className="">
+            <Link to="/" className="">
+              <AiFillHome className="" size={29} style={{ color: "white" }} />
+            </Link>
+          </span>
+          <span className="">
+            <Link to="/o">
+              <FaUserAlt size={25} style={{ color: "white" }} />
+            </Link>
+          </span>
 
-					<span className=''>
-						<Link to='/umiejetnosci'>
-							<VscTools size={27} style={{ color: 'white' }} />
-						</Link>
-					</span>
-				
-					<span className=''>
-						<Link to='/contact'>
-							<MdContactMail size={34} style={{ color: 'white' }} />
-						</Link>
-					</span>
-					<span className=''>
-						<Link to='/project'>
-							<AiOutlineFundProjectionScreen size={34} style={{ color: 'white' }} />
-						</Link>
-					</span>
+          <span className="">
+            <Link to="/umiejetnosci">
+              <VscTools size={27} style={{ color: "white" }} />
+            </Link>
+          </span>
 
+          <span className="">
+            <Link to="/contact">
+              <MdContactMail size={34} style={{ color: "white" }} />
+            </Link>
+          </span>
+          <span className="">
+            <Link to="/project">
+              <AiOutlineFundProjectionScreen
+                size={34}
+                style={{ color: "white" }}
+              />
+            </Link>
+          </span>
+          <span className="">
+            <Link to="/keys">
+              <GiKeyCard size={34} style={{ color: "white" }} />
+            </Link>
+          </span>
+          <span className="">
+            <Link to="/electronic">
+              <GrCpu size={34} style={{  color: "#D3D3D3"}} />
+            </Link>
+          </span>
 
-					
-
-					{/*
+          {/*
 				<div onClick={handleNav} className='  md:hidden  '>
 					<BiMenu size={25} style={{ color:'black'}} />
 				</div>
@@ -151,8 +155,8 @@ export const Navbar = () => {
 					</div>
 				</div>
 					*/}
-				</div>
-			</div>
-		</div>
-	)
-}
+        </div>
+      </div>
+    </div>
+  );
+};

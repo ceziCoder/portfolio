@@ -5,6 +5,8 @@ import { Home } from './page/Home'
 import React from 'react'
 import { Contact } from './page/Contact'
 import { Skill } from './page/Skill'
+import { Keys } from './page/Keys'
+import { Electronic } from './page/Electronic'
 import { About } from './page/About'
 import { ErrorPage } from './page/ErrorPage'
 import { AnimatePresence } from 'framer-motion'
@@ -30,7 +32,7 @@ export const App = () => {
     <>
       <I18nextProvider i18n={i18n}>
       <Router>
-        <AnimatePresence mode='wait' exitBeforeEnter>
+        <AnimatePresence mode='wait' >
 
           <Routes>
              
@@ -45,7 +47,12 @@ export const App = () => {
                
                 <Route path='/contact' element={<Contact /> } />
               
-                <Route path='/screen' element={<Screen/> } />
+                <Route path='/screen' element={<Screen />} />
+                <Route path='/keys' element={<Keys/> } />
+                <Route path='/electronic' element={<Electronic/> } />
+                
+
+                {/* 404 */}
                 <Route path='*' element={!shouldRedirect   ? <ErrorPage /> : <Navigate to='/'/>} />
               
           </Route>

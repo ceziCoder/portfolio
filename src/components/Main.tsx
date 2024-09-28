@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 import { motion } from 'framer-motion'
-import Typed from 'react-typed'
+import { ReactTyped } from 'react-typed'
 import img1 from '../public/cezi.jpg'
 
 
@@ -37,12 +37,12 @@ export const Main = () => {
 				<div className='h-full   w-full flex-col items-center  bg-white  '>
 					{/*}	<h3 className='text-xl  flex items-center justify-center'>Cezary Lachut dsfs</h3>*/}
 
-					<Typed
+					<ReactTyped
 						className='flex items-center justify-center ml-2 text-black/50 font-extrabold m-4 '
 						strings={['Cezary Łachut']}
 						typeSpeed={600}
 						backSpeed={600}
-						loop></Typed>
+						loop></ReactTyped>
 
 					<img
 						src={img1}

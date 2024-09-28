@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from '../public/cezi.jpg'
-import Typed from 'react-typed'
+import { ReactTyped } from "react-typed"
 import img2 from '../public/screen.jpg'
 
 
@@ -19,12 +19,12 @@ export const Screen = () => {
   return (
       <div className='h-screen w-screen' style={divStyle}>
           
-      <Typed
+      <ReactTyped
       className='flex items-center justify-center ml-2 absolute bottom-[110px] left-[390px] text-white text-2xl font-extrabold m-4 '
       strings={['Programming']}
       typeSpeed={600}
       
-      ></Typed>
+      ></ReactTyped>
 
   <img
       src={img1}
