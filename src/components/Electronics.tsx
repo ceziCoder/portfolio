@@ -20,7 +20,7 @@ interface TimelineEntry {
 }
 
 
-const navigate = useNavigate()
+
 
 const exampleData: TimelineEntry[] = [
   {
@@ -30,7 +30,7 @@ const exampleData: TimelineEntry[] = [
         <p>My first traffic light project on the atmega328p microcontroller written in C on registers.</p>
         <p>Date: August 1, 2024</p>
         <img src={project1} alt="" />
-        <a className="" href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' onClick={() => navigate('/o')}>
+        <a className="" href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' >
           <FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
           <span className=''>github</span>
         </a>
