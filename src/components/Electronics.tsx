@@ -6,7 +6,14 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import screen from '../public/screen.jpg'
+import project1 from '../public/1_p.jpg'
+import { FaGithub } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+
+
+
+
+
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
@@ -14,31 +21,37 @@ interface TimelineEntry {
 
 const exampleData: TimelineEntry[] = [
   {
-    title: "Event 1",
+    title: "Project 1",
     content: (
-      <div>
-        <p>This is the description of Event 1.</p>
-        <p>Date: January 1, 2023</p>
+      <div className="flex flex-col items-center  justify-center">
+        <p>My first traffic light project on the atmega328p microcontroller written in C on registers.</p>
+        <p>Date: August 1, 2024</p>
+        <img src={project1} alt="" />
+        <a className="" href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' onClick={() => navigate('/o')}>
+          <FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
+          <span className=''>github</span>
+        </a>
       </div>
     ),
   },
   {
-    title: "Event 2",
+    title: "Project 2",
     content: (
       <div>
-        <p>This is the description of Event 2.</p>
-        <p>Date: February 5, 2023</p>
+        <p> 2.</p>
+        <p>Date: 00-00-0000</p>
+        <img src="https://via.placeholder.com/150/transparent" alt="empty image" className="w-full h-auto" />
       </div>
     ),
   },
   {
-    title: "Event 3",
+    title: "Project 3",
     content: (
       <div>
-        <p>This is the description of Event 3.</p>
-        <p>Date: March 10, 2023</p>
+        <p> 3.</p>
+        <p>Date: 00-00-0000</p>
+        <img src="https://via.placeholder.com/150/transparent" alt="empty image" className="w-full h-auto" />
 
-          <img src={screen} />
 
       </div>
     ),
@@ -49,6 +62,7 @@ export const Electronics = ({ data = exampleData }: { data: TimelineEntry[] }) =
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (ref.current) {
@@ -71,12 +85,11 @@ export const Electronics = ({ data = exampleData }: { data: TimelineEntry[] }) =
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+        <h2 className="text-lg md:text-4xl mb-4 ml-16 text-black dark:text-white max-w-4xl">
+          Microcontrollers
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+
         </p>
       </div>
 

@@ -12,9 +12,9 @@ import { VscTools } from "react-icons/vsc";
 import axios, { Axios } from "axios";
 import i18n from "../i18n";
 import { useTranslation, Trans } from "react-i18next";
-import { GiKeyCard } from "react-icons/gi";
-import { GrCpu } from "react-icons/gr";
 
+import { GrCpu } from "react-icons/gr";
+import key from "../public/car.png"
 const langs: string | any = {
   en: { nativeName: "English" },
   pl: { nativeName: "polski" },
@@ -34,14 +34,14 @@ export const Navbar = () => {
 			all: number
 		}
 	}
-	
+
 	const [weatherData, setWeatherData] = useState(null)
 	const [loading, setLoading] = useState(false)
 
 	const url = `https://api.openweathermap.org/data/2.5/weather?q=Mielec&appid=${process.env.REACT_PUBLIC_WEATHER_KEY}`
 
 	const fetchWeather = () => {
-		
+
 		setLoading(true)
 		axios
 			.get(url)
@@ -50,11 +50,11 @@ export const Navbar = () => {
 				console.log(res.data)
 			})
 			.catch((error) => console.error(error))
-		
+
 		setLoading(false)
 		if (weatherData)
 		{
-			
+
 		}
 
 		if (loading)
@@ -102,7 +102,7 @@ export const Navbar = () => {
           </span>
           <span className="">
             <Link to="/keys">
-              <GiKeyCard size={34} style={{ color: "white" }} />
+							<img src={key} className="h-8 w-8 filter invert sepia saturate-100 hue-rotate-[220deg]" />
             </Link>
           </span>
           <span className="">
@@ -115,7 +115,7 @@ export const Navbar = () => {
 				<div onClick={handleNav} className='  md:hidden  '>
 					<BiMenu size={25} style={{ color:'black'}} />
 				</div>
-				
+
 				<div className={nav ? ' fixed left-0 top-0 w-full h-screen bg-black/50 ' : ''}>
 					<div
 						className={
@@ -137,21 +137,21 @@ export const Navbar = () => {
 							<Link to='/contact' >
 							<div  className='rounded-full shadow-md shadow-zinc-50 p-3 cursor-pointer bg-zinc-100'>
 								<MdContactMail size={25} />
-								
+
 							</div>
 							</Link>
-								
-								
+
+
 									<Link to='/'>
 										<AiFillHome className='outline rounded-3xl' size={30} style={{color:'white'}} >
-											
+
 										</AiFillHome>
 									</Link>
-								
-								
-							
+
+
+
 						</div>
-						
+
 					</div>
 				</div>
 					*/}
