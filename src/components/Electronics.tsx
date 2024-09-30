@@ -19,6 +19,9 @@ interface TimelineEntry {
   content: React.ReactNode;
 }
 
+
+const navigate = useNavigate()
+
 const exampleData: TimelineEntry[] = [
   {
     title: "Project 1",
@@ -58,7 +61,7 @@ const exampleData: TimelineEntry[] = [
   },
 ];
 
-export const Electronics = ({ data = exampleData }: { data: TimelineEntry[] }) => {
+export const Electronics = ({ data = exampleData }: { data?: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
