@@ -47,7 +47,7 @@ export const Main = () => {
 					<img
 						src={img1}
 						className='h-[80px] w-[80px]  rounded-full  m-auto object-cover shadow-2xl  opacity-40 ' ></img>
-					
+
 
 
 					<br />

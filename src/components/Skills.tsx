@@ -26,7 +26,7 @@ const langs: string | any = {
 }
 
 export const Skills = () => {
-  
+
   const {t, i18n} = useTranslation()
 
 
@@ -62,7 +62,7 @@ export const Skills = () => {
                 <li className='ml-2'>C</li>
                 <h2 className='ml-1'> -- 20%</h2>
               </span>
-            
+
               <span className='flex items-center text-m  m-2'>
                 <img src={img3} className='h-5 w-5' />
                 <li className='ml-2'>React</li>
@@ -75,7 +75,7 @@ export const Skills = () => {
                 <h2 className=''>--20%</h2>
               </span>
               <hr className='' />
-         
+
               <span className='flex items-center text-m m-2'>
                 <img src={img12} className='h-12 w-12' />
                 <li className='ml-2'>Expo</li>
@@ -107,7 +107,7 @@ export const Skills = () => {
                 <li className='ml-1'>Express</li>
                 <h2 className='ml-1'>- 15%</h2>
               </span>
-          
+
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img8} className='h-7 w-7' />

@@ -18,12 +18,12 @@ export const Screen = () => {
 
   return (
       <div className='h-screen w-screen' style={divStyle}>
-          
+
       <ReactTyped
       className='flex items-center justify-center ml-2 absolute bottom-[110px] left-[390px] text-white text-2xl font-extrabold m-4 '
       strings={['Programming']}
       typeSpeed={600}
-      
+
       ></ReactTyped>
 
   <img
