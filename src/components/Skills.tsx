@@ -60,7 +60,7 @@ export const Skills = () => {
               <span className='flex items-center text-m  m-2'>
                 <img src={img14} className='h-7 w-7' />
                 <li className='ml-2'>C</li>
-                <h2 className='ml-1'> -- 20%</h2>
+                <h2 className='ml-1'> -- 12%</h2>
               </span>
 
               <span className='flex items-center text-m  m-2'>

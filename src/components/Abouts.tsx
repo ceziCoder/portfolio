@@ -89,7 +89,7 @@ export const Abouts = () => {
 							Jestem programistycznym samoukiem, nie byłem na żadnym bootcampie. Moja przygoda zaczela od implementacji
 							aplikacji Osmocom do telefonu Motorola c118 w srodowisku Unix . Do nauki zachęcił mnie kolega
 							programista.Ucze sie od okolo roku HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js, Git,
-							Vite.js, React-native, Expo ,w nauce pomagaja mi dokumetacja, youtube Stack Overflow, narzedzia Ai. Moj plus to że nigdy się
+							Vite.js, React-native, Expo , C ,w nauce pomagaja mi dokumetacja, youtube Stack Overflow, narzedzia Ai. Moj plus to że nigdy się
 							nie poddaję. Mam jednak wadę wielowątkowości myśleniowa, Lubię rozwiązywać problemy,jak nie bedzie
 							internetu zaczne czytac ksiazki o programowaniu i rozwize problem, dlatego lubię programowanie.
 						</h2>

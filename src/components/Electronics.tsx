@@ -11,7 +11,13 @@ import { FaGithub } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
 
+const card = [
+  {
+    title: "Forest Adventure",
+    src: project1,
+  },
 
+];
 
 
 interface TimelineEntry {
@@ -29,7 +35,8 @@ const exampleData: TimelineEntry[] = [
       <div className="flex flex-col items-center  justify-center">
         <p>My first traffic light project on the atmega328p microcontroller written in C on registers.</p>
         <p>Date: August 1, 2024</p>
-        <img src={project1} alt="" />
+        <img src={project1}></img>
+
         <a className="" href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' >
           <FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
           <span className=''>github</span>
@@ -76,7 +83,7 @@ export const Electronics = ({ data = exampleData }: { data?: TimelineEntry[] }) 
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 100%"],
+    offset: ["start 15%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -130,7 +137,7 @@ export const Electronics = ({ data = exampleData }: { data?: TimelineEntry[] }) 
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-pink-500 via-blue-400 to-transparent from-[0%] via-[30%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-pink-500 via-blue-500 to-transparent from-[0%] via-[30%] rounded-full"
           />
         </div>
       </div>
