@@ -6,7 +6,7 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import project1 from '../public/1_p.jpg'
+import project1 from '../public/1-.jpg'
 import { FaGithub } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 

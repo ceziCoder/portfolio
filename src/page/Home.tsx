@@ -13,9 +13,9 @@ export const Home = () => {
     <>
 
       <Navbar />
-      <Particle />
-      <Main />
 
+      <Main />
+      <Particle />
       < Outlet />
     </>
   )

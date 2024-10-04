@@ -33,6 +33,7 @@ export const Main = () => {
 
 	return (
 		<motion.div initial='out' animate='in' exit='out' variants={animationThree} transition={{ duration: 0.4 }}>
+
 			<div className=' w-full h-full    flex flex-col items-center justify-center  '>
 				<div className='h-full   w-full flex-col items-center  bg-white  '>
 					{/*}	<h3 className='text-xl  flex items-center justify-center'>Cezary Lachut dsfs</h3>*/}
@@ -52,7 +53,7 @@ export const Main = () => {
 
 					<br />
 
-					<div className=' p-4 m-auto w-[80%] h-60 shadow-2xl flex items-center justify-center '>
+					<div className=' p-4 m-auto w-[80%] h-60 shadow-2xl flex items-center justify-center  '>
 						<p className='italic bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-600'>'Hello world'</p>
 						<p className='break-words'></p>
 					</div>
