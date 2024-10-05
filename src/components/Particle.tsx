@@ -59,7 +59,7 @@ export const Particle = () => {
           },
           links: {
             color: "#000000",
-            distance: 130,
+            distance: 170,
             enable: true,
             opacity: 0.2,
             width: 0.5,
@@ -70,7 +70,7 @@ export const Particle = () => {
             outModes: {
               default: "bounce",
             },
-            random: false,
+            random: true,
             speed: 0.5,
             straight: false,
           },
@@ -79,7 +79,7 @@ export const Particle = () => {
               enable: true,
               area: 800,
             },
-            value: 40,
+            value: 15,
           },
           opacity: {
             value: 0.5,
