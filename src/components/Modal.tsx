@@ -108,9 +108,9 @@ export const ModalBody = ({
             )}
             initial={{
               opacity: 0,
-              scale: 0.5,
+              scale: 0.7,
               rotateX: 40,
-              y: 40,
+              y: 50,
             }}
             animate={{
               opacity: 1,
@@ -120,7 +120,7 @@ export const ModalBody = ({
             }}
             exit={{
               opacity: 0,
-              scale: 0.8,
+              scale: 0.5,
               rotateX: 10,
             }}
             transition={{
