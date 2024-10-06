@@ -35,7 +35,7 @@ export function Electronics() {
             alt="linear demo image"
             className="     object-cover rounded-2xl"
           />
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full flex justify-center items-center cursor-pointer">
           <a href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' className="" >
             <FaGithub className='w-[50px] h-[50px] cursor-pointer  bg-black/30 rounded-full mt-6'></FaGithub>
             <span className=''>github</span>
