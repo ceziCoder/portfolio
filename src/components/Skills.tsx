@@ -60,26 +60,26 @@ export const Skills = () => {
               <span className='flex items-center text-m  m-2'>
                 <img src={img14} className='h-7 w-7' />
                 <li className='ml-2'>C</li>
-                <h2 className='ml-1'> -- 12%</h2>
+                <h2 className='ml-1'> -- 8%</h2>
               </span>
 
               <span className='flex items-center text-m  m-2'>
                 <img src={img3} className='h-5 w-5' />
                 <li className='ml-2'>React</li>
-                <h2 className='ml-1'>-- 20%</h2>
+                <h2 className='ml-1'>-- 16%</h2>
               </span>
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img11} className='h-5 w-5' />
                 <li className='ml-2'>React-Native</li>
-                <h2 className=''>--20%</h2>
+                <h2 className=''>--14%</h2>
               </span>
               <hr className='' />
 
               <span className='flex items-center text-m m-2'>
                 <img src={img12} className='h-12 w-12' />
                 <li className='ml-2'>Expo</li>
-                <h2 className='ml-1'>-- 20%</h2>
+                <h2 className='ml-1'>-- 11%</h2>
               </span>
               <hr className='' />
 
@@ -87,44 +87,44 @@ export const Skills = () => {
           <span className='flex items-center text-m m-2'>
             <img src={img4} className='h-8 w-8' />
             <li className='ml-1'>Tailwind</li>
-            <h2 className='ml-1'>--- 30%</h2>
+            <h2 className='ml-1'>--- 24%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-m m-2'>
             <img src={img5}className='h-6 w-6' />
             <li className='ml-4'>Linux</li>
-            <h2 className='ml-1'>--- 30%</h2>
+            <h2 className='ml-1'>--- 35%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-m  m-2'>
             <img src={img6} className='h-8 w-8' />
             <li className='ml-2'>Node.js</li>
-            <h2 className='ml-1'>- 15%</h2>
+            <h2 className='ml-1'>- 12%</h2>
           </span>
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img10} className='h-8 w-8' />
                 <li className='ml-1'>Express</li>
-                <h2 className='ml-1'>- 15%</h2>
+                <h2 className='ml-1'>- 7%</h2>
               </span>
 
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img8} className='h-7 w-7' />
                 <li className='ml-2'>Mongodb</li>
-                <h2 className='ml-1'>- 15%</h2>
+                <h2 className='ml-1'>- 10%</h2>
               </span>
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img9} className='h-7 w-7' />
                 <li className='ml-2'>Git</li>
-                <h2 className='ml-1'>-- 20%</h2>
+                <h2 className='ml-1'>-- 10%</h2>
               </span>
               <hr className='' />
               <span className='flex items-center text-m m-2'>
                 <img src={img2} className='h-6 w-6' />
                 <li className='ml-2'>Typescript</li>
-                <h2 className='ml-1'>- 10%</h2>
+                <h2 className='ml-1'>- 6%</h2>
               </span>
 
 
@@ -132,12 +132,12 @@ export const Skills = () => {
               <span className='flex items-center text-m m-2'>
                 <img src={img7} className='h-5 w-5' />
                 <li className='ml-2'>English</li>
-                <h2 className='ml-1'>--- 30%</h2>
+                <h2 className='ml-1'>--- 34%</h2>
               </span>
               <span className='flex items-center text-m  m-2'>
                 <img src={img13} className='h-6 w-6' />
                 <li className='ml-2'>WordPress</li>
-                <h2 className='ml-1'>- 12%</h2>
+                <h2 className='ml-1'>- 25%</h2>
               </span>
 
         </ul>
