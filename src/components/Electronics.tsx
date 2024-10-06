@@ -6,141 +6,130 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import project1 from '../public/1-.jpg'
-import { FaGithub } from 'react-icons/fa'
-import { useNavigate } from 'react-router-dom'
+import project1 from "../public/1-.jpg";
+import { FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+"use client";
+import { twMerge } from "tailwind-merge";
+import { TracingBeam } from "../components/TracingBeam";
+import { WobbleCard } from "../components/Wobble-card"
 
+export function Electronics() {
+  return (
+    <TracingBeam className="px-4">
+      <div className="max-w-2xl mx-10 antialiased pt-4 relative ">
+        <WobbleCard containerClassName=" mb-4 col-span-1 min-h-[300px]">
+          <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            Microcotrollers AVR
+          </h2>
+          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+            My first project on atmega328p written in C on registers.
+          </p>
+        </WobbleCard>
+        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 backdrop-blur-sm bg-gradient-to-r from-black/70 to-white shadow-xl shadow-black/70 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
 
-const card = [
-  {
-    title: "Forest Adventure",
-    src: project1,
-  },
+          <img
+            src={project1}
+            width={600}
+            height={600}
+            alt="linear demo image"
+            className="     object-cover rounded-2xl"
+          />
+        </WobbleCard>
 
-];
+        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 bg-blue-500 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
 
+          <img
+            //src={project1}
+            width={600}
+            height={600}
+            alt="linear demo image"
+            className="     object-cover rounded-2xl"
+          />
+        </WobbleCard>
+        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+          <div className="max-w-sm">
+            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              Signup for blazing-fast cutting-edge state of the art Gippity AI
+              wrapper today!
+            </h2>
+            <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+              With over 100,000 mothly active bot users, Gippity AI is the most
+              popular AI platform for developers.
+            </p>
+          </div>
 
-interface TimelineEntry {
-  title: string;
-  content: React.ReactNode;
+        </WobbleCard>
+      </div>
+    </TracingBeam>
+  );
 }
 
-
-
-
-const exampleData: TimelineEntry[] = [
+const dummyContent = [
   {
-    title: "Project 1",
-    content: (
-      <div className="flex flex-col items-center  justify-center">
-        <p>My first traffic light project on the atmega328p microcontroller written in C on registers.</p>
-        <p>Date: August 1, 2024</p>
-        <img src={project1}></img>
-
-        <a className="" href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' >
-          <FaGithub className='w-[50px] h-[50px] cursor-pointer animate-pulse bg-black/30 rounded-full mt-6'></FaGithub>
-          <span className=''>github</span>
-        </a>
-      </div>
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          Sit duis est minim proident non nisi velit non consectetur. Esse
+          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
+          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
+          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
+          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
+          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
+          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
+          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
+          commodo et labore dolore commodo pariatur.
+        </p>
+        <p>
+          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
+          veniam in commodo id reprehenderit adipisicing. Proident duis
+          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+        </p>
+        <p>
+          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
+          reprehenderit deserunt amet laborum consequat adipisicing officia qui
+          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
+          Amet culpa officia aliquip deserunt veniam deserunt officia
+          adipisicing aliquip proident officia sunt.
+        </p>
+      </>
     ),
+    badge: "AVR",
+    image: project1
+
   },
   {
-    title: "Project 2",
-    content: (
-      <div>
-        <p> 2.</p>
-        <p>Date: 00-00-0000</p>
-        <img src="https://via.placeholder.com/150/transparent" alt="empty image" className="w-full h-auto" />
-      </div>
-    ),
-  },
-  {
-    title: "Project 3",
-    content: (
-      <div>
-        <p> 3.</p>
-        <p>Date: 00-00-0000</p>
-        <img src="https://via.placeholder.com/150/transparent" alt="empty image" className="w-full h-auto" />
-
-
-      </div>
-    ),
-  },
-];
-
-export const Electronics = ({ data = exampleData }: { data?: TimelineEntry[] }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
-  const navigate = useNavigate()
-
-  useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
-    }
-  }, [ref]);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 15%", "end 100%"],
-  });
-
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
-  return (
-    <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
-      ref={containerRef}
-    >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 ml-16 text-black dark:text-white max-w-4xl">
-          Microcontrollers
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
 
         </p>
-      </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
-          >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
-              </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
-                {item.title}
-              </h3>
-            </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.title}
-              </h3>
-              {item.content}{" "}
-            </div>
-          </div>
-        ))}
-        <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
-        >
-          <motion.div
-            style={{
-              height: heightTransform,
-              opacity: opacityTransform,
-            }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-pink-500 via-blue-500 to-transparent from-[0%] via-[30%] rounded-full"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
+      </>
+    ),
+    badge: "Changelog",
+    image:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    title: "",
+    description: (
+      <>
+        <p>
+          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
+          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
+          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
+          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
+          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
+          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image:
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
