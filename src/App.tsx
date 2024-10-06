@@ -26,7 +26,7 @@ export const App = () => {
   const shouldRedirect = true
 
   const {t, i18n} =useTranslation()
-  
+
 
   return (
     <>
@@ -35,26 +35,26 @@ export const App = () => {
         <AnimatePresence mode='wait' >
 
           <Routes>
-             
+
             <Route path='/'element={<Shared/>}>
               <Route index  element={<Home/>}/>
                 <Route path='umiejetnosci' element={ <Skill /> } />
-                
-              
+
+
                 <Route path='o' element={ <About />  } />
-              
+
                 <Route path='/project' element={<Project />} />
-               
+
                 <Route path='/contact' element={<Contact /> } />
-              
+
                 <Route path='/screen' element={<Screen />} />
                 <Route path='/keys' element={<Keys/> } />
                 <Route path='/electronic' element={<Electronic/> } />
-                
+
 
                 {/* 404 */}
                 <Route path='*' element={!shouldRedirect   ? <ErrorPage /> : <Navigate to='/'/>} />
-              
+
           </Route>
           </Routes>
         </AnimatePresence>
