@@ -17,6 +17,7 @@ import image2 from '../public/2-.jpg';
 import image3 from '../public/3-.jpg';
 import image4 from '../public/5-.jpg';
 import image5 from '../public/7-.jpg'
+import { Button } from "../components/Moving-border";
 
 export function Keys() {
 
@@ -50,16 +51,23 @@ export function Keys() {
   return (
     <>
       <Navbar />
-      <div className="py-20 mx-5  flex items-center justify-end">
-        <Modal>
-          <ModalTrigger className="bg-black/40 dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
 
-            <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
-              Moje narzedzia
-            </span>
-            <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-              <FaTools size={30} />
-            </div>
+      <div className="py-2 mx-5 flex justify-end items-start ">
+
+        <Modal>
+
+          <ModalTrigger className="bg-transparent  dark:bg-white dark:text-black text-black flex justify-center group/modal-btn">
+            <Button borderRadius="1.5rem"
+              className="p-1 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+            <span className="group-hover/modal-btn:translate-x-40 text-center text-s transition duration-500 ">
+              My toolkit
+              </span>
+
+            <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute top-0  transition duration-500 text-white z-20">
+              <FaTools size={25} color="black" style={{margin: '2px'}}/>
+              </div>
+            </Button>
           </ModalTrigger>
           <ModalBody>
             <ModalContent>
@@ -99,10 +107,12 @@ export function Keys() {
 
             </ModalContent>
           </ModalBody>
+
         </Modal>
         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
 
-        </div>
+          </div>
+
       </div>
 
 
