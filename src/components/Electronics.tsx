@@ -18,7 +18,7 @@ export function Electronics() {
   return (
     <TracingBeam className="px-4">
       <div className="max-w-2xl mx-10 antialiased pt-4 relative ">
-        <WobbleCard containerClassName=" bg-gradient-to-r from-blue-500 to-blue-200 shadow-xl shadow-blue-400 mb-4 col-span-1 min-h-[300px]">
+        <WobbleCard containerClassName=" bg-gradient-to-r from-blue-500 to-blue-200 shadow-md shadow-blue-400 mb-4 col-span-1 min-h-[300px]">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Microcotrollers AVR
           </h2>
@@ -35,6 +35,12 @@ export function Electronics() {
             alt="linear demo image"
             className="     object-cover rounded-2xl"
           />
+          <div className="w-full flex justify-center items-center">
+          <a href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' className="" >
+            <FaGithub className='w-[50px] h-[50px] cursor-pointer  bg-black/30 rounded-full mt-6'></FaGithub>
+            <span className=''>github</span>
+            </a>
+          </div>
         </WobbleCard>
 
         <WobbleCard containerClassName="shadow-lg shadow-pink-300 mb-4 col-span-1 lg:col-span-3 bg-pink-300 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
