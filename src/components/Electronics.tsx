@@ -18,15 +18,16 @@ export function Electronics() {
   return (
     <TracingBeam className="px-4">
       <div className="max-w-2xl mx-10 antialiased pt-4 relative ">
-        <WobbleCard containerClassName=" bg-gradient-to-r from-blue-500 to-blue-200 shadow-md shadow-blue-400 mb-4 col-span-1 min-h-[300px]">
-          <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        <WobbleCard containerClassName=" bg-white shadow-md shadow-blue-400 mb-4 col-span-1 min-h-[300px]">
+          <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-black">
             Microcotrollers AVR
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-black">
             My first project on atmega328p written in C on registers.
           </p>
         </WobbleCard>
-        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 backdrop-blur-sm bg-gradient-to-r from-black/10 to-white shadow-xl shadow-black/70 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
+        <br className="bg-black w-100 h-5" />
+        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 backdrop-blur-sm bg-gradient-to-r from-black/10 to-white shadow-md shadow-black/70 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
 
           <img
             src={project1}
@@ -42,8 +43,8 @@ export function Electronics() {
             </a>
           </div>
         </WobbleCard>
-
-        <WobbleCard containerClassName="shadow-lg shadow-pink-300 mb-4 col-span-1 lg:col-span-3 bg-pink-300 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
+        <br className="bg-black w-10 "/>
+        <WobbleCard containerClassName="shadow-lg shadow-pink-300 mb-4 col-span-1 lg:col-span-3 bg-white min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
 
           <img
             //src={project1}
@@ -53,12 +54,12 @@ export function Electronics() {
             className="     object-cover rounded-2xl"
           />
         </WobbleCard>
-        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 bg-blue-400 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <WobbleCard containerClassName=" mb-4 col-span-1 lg:col-span-3 bg-white min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] shadow-md shadow-black/70">
           <div className="max-w-sm">
-            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-black">
 
             </h2>
-            <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+            <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-black">
 
             </p>
           </div>

@@ -60,8 +60,10 @@ export function Keys() {
             <Button borderRadius="1.5rem"
               className="p-1 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
-            <span className="group-hover/modal-btn:translate-x-40 text-center text-s transition duration-500 shadow-sm ">
-              My toolkit
+              <span className="group-hover/modal-btn:translate-x-40 text-center text-s transition duration-500 shadow-sm ">
+                <mark>
+                  My toolkit
+                </mark>
               </span>
 
             <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute top-0  transition duration-500 text-white z-20">
@@ -94,8 +96,8 @@ export function Keys() {
                     <img
                       src={image.src}
                       alt=""
-                      width="700"
-                      height="700"
+                      width="800"
+                      height="800"
                       className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
                     />
                     <h6 className="text-neutral-700 dark:text-neutral-300 text-center mt-2 text-sm">
