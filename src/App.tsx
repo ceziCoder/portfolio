@@ -6,6 +6,8 @@ import React from 'react'
 import { Contact } from './page/Contact'
 import { Skill } from './page/Skill'
 import { Keys } from './page/Keys'
+import { Microcontroler } from './page/Microcontroler'
+import { Smartfone } from './page/Smartfone'
 import { Electronic } from './page/Electronic'
 import { About } from './page/About'
 import { ErrorPage } from './page/ErrorPage'
@@ -49,7 +51,10 @@ export const App = () => {
 
                 <Route path='/screen' element={<Screen />} />
                 <Route path='/keys' element={<Keys/> } />
-                <Route path='/electronic' element={<Electronic/> } />
+
+                <Route path='/electronic' element={<Electronic />} />
+                <Route path='/microcontroler' element={<Microcontroler />} />
+                <Route path='/smartfone' element={<Smartfone />} />
 
 
                 {/* 404 */}

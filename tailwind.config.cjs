@@ -3,6 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
+
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -46,7 +47,7 @@ module.exports = {
   },
   plugins: [
     addVariablesForColors,
-    function ({ matchUtilities, theme }) {
+    function ({ matchUtilities, theme,  addUtilities }) {
       matchUtilities(
         {
           "bg-grid": (value) => ({
@@ -67,6 +68,15 @@ module.exports = {
         },
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
+        addUtilities({
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none", // IE
+          "scrollbar-width": "none", // Firefox
+        },
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none", // Chrome, Safari
+        },
+      });
     },
   ],
 };

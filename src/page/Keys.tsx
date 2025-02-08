@@ -61,9 +61,9 @@ export function Keys() {
               className="p-1 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <span className="group-hover/modal-btn:translate-x-40 text-center text-s transition duration-500 shadow-sm ">
-                <mark>
+                
                   My toolkit
-                </mark>
+
               </span>
 
             <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute top-0  transition duration-500 text-white z-20">

@@ -1,0 +1,1 @@
+To download the build for your device replace https://sourceforge.net/projects/infinity-x/files/codename with your device codename. Eg. ginkgo https://sourceforge.net/projects/infinity-x/files/ginkgo and navigate to your desired build.

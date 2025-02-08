@@ -11,10 +11,10 @@ import { FaGithub } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 "use client";
 import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "../components/TracingBeam";
-import { WobbleCard } from "../components/Wobble-card"
+import { TracingBeam } from "./TracingBeam";
+import { WobbleCard } from "./Wobble-card"
 
-export function Electronics() {
+export const Microcontrolers = () => {
   return (
     <TracingBeam className="px-4">
       <div className="max-w-2xl mx-10 antialiased pt-4 relative ">
@@ -38,12 +38,12 @@ export function Electronics() {
           />
           <div className="w-full flex justify-center items-center cursor-pointer">
             <a href='https://github.com/ceziCoder/Atmega328p-microcontrollers' target='_blank' style={{ cursor: "pointer" }} >
-            <FaGithub className='w-[50px] h-[50px]   bg-black/30 rounded-full mt-6'></FaGithub>
-            <span className=''>github</span>
+              <FaGithub className='w-[50px] h-[50px]   bg-black/30 rounded-full mt-6'></FaGithub>
+              <span className=''>github</span>
             </a>
           </div>
         </WobbleCard>
-        <br className="bg-black w-10 "/>
+        <br className="bg-black w-10 " />
         <WobbleCard containerClassName="shadow-lg shadow-pink-300 mb-4 col-span-1 lg:col-span-3 bg-white min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] flex justify-center items-center">
 
           <img
