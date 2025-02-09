@@ -61,7 +61,7 @@ export function Keys() {
               className="p-1 bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <span className="group-hover/modal-btn:translate-x-40 text-center text-s transition duration-500 shadow-sm ">
-                
+
                   My toolkit
 
               </span>
@@ -74,20 +74,21 @@ export function Keys() {
           <ModalBody>
             <ModalContent>
 
-              <div className="flex justify-center items-center">
+              <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap">
+
                 {images.map((image, idx) => (
                   <motion.div
                     key={"images" + idx}
                     style={{
-                      rotate: Math.random() * 20 + 10,
+                      rotate: Math.random() * 20 + 12,
                     }}
                     whileHover={{
-                      scale: 1.5,
+                      scale: 2.0,
                       rotate: 0,
                       zIndex: 100,
                     }}
                     whileTap={{
-                      scale: 1.5,
+                      scale: 2.5,
                       rotate: 0,
                       zIndex: 100,
                     }}

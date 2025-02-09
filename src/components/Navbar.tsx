@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import { Skills } from "./Skills";
 import { AiFillHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { GiSkills, GiSmartphone } from "react-icons/gi";
+import { GiSkills, GiSmartphone, GiCarKey } from "react-icons/gi";
 import { MdContactMail, MdElectricBolt } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import { VscTools } from "react-icons/vsc";
@@ -14,7 +14,7 @@ import i18n from "../i18n";
 import { useTranslation, Trans } from "react-i18next";
 
 import { GrCpu } from "react-icons/gr";
-import key from "../public/car.png"
+
 const langs: string | any = {
 	en: { nativeName: "English" },
 	pl: { nativeName: "polski" },
@@ -84,6 +84,10 @@ export const Navbar = () => {
 				</Link>
 				<Link to="/project" onClick={handleClick} className="mx-2">
 					<AiOutlineFundProjectionScreen size={34} style={{ color: "white" }} />
+
+				</Link>
+				<Link to="/keys" onClick={handleClick} className="mx-2">
+					<GiCarKey size={34} style={{ color: "#767a76" }}  />
 				</Link>
 				<Link to="/microcontroler" onClick={handleClick} className="mx-2">
 					<GrCpu size={34} style={{ color: "#767a76" }} />
