@@ -88,7 +88,7 @@ export function Keys() {
                       zIndex: 100,
                     }}
                     whileTap={{
-                      scale: 2.5,
+                      scale: 1.8,
                       rotate: 0,
                       zIndex: 100,
                     }}
@@ -99,7 +99,7 @@ export function Keys() {
                       alt=""
                       width="800"
                       height="800"
-                      className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                      className="rounded-lg h-[12rem] w-[12rem] md:h-40 md:w-40 object-cover flex-shrink-0"
                     />
                     <h6 className="text-neutral-700 dark:text-neutral-300 text-center mt-2 text-sm">
                       {image.description}
