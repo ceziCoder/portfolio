@@ -52,7 +52,7 @@ export function Keys() {
     <>
       <Navbar />
 
-      <div className="py-2 mx-5 flex justify-end items-start ">
+      <div className="py-2 mx-5 flex justify-end items-start  ">
 
         <Modal>
 
@@ -72,9 +72,9 @@ export function Keys() {
             </Button>
           </ModalTrigger>
           <ModalBody>
-            <ModalContent className="overflow-auto max-h-[80vh]">
+            <ModalContent className="overflow-auto max-h-[80vh]  ">
 
-              <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap">
+              <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap mt-2">
 
                 {images.map((image, idx) => (
                   <motion.div
