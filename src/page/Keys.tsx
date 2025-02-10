@@ -72,7 +72,7 @@ export function Keys() {
             </Button>
           </ModalTrigger>
           <ModalBody>
-            <ModalContent className="overflow-auto max-h-[80vh]  ">
+            <ModalContent className="overflow-auto max-h-[100vh]  ">
 
               <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap mt-2">
 
