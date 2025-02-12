@@ -4,6 +4,7 @@ import image2 from '../public/2-.jpg';
 import image3 from '../public/3-.jpg';
 import image4 from '../public/5-.jpg';
 import image5 from '../public/7-.jpg';
+import image6 from '../public/s1.svg'
 import { motion } from "framer-motion";
 import {
   Modal,
@@ -42,13 +43,24 @@ const images = [
 
 export const Electronics = () => {
   return (
-    <>
+    <div className=" w-full h-screen overflow-auto  "
+      style={{
+        backgroundImage: `url(${image6})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}>
 
 
 
 
+      <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap  "
 
-                  <div className=" flex justify-center items-center flex-col sm:flex-row flex-wrap">
+
+
+      >
+
+
 
                     {images.map((image, idx) => (
                       <motion.div
@@ -85,12 +97,10 @@ export const Electronics = () => {
 
 
 
-            <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-
-              </div>
 
 
-            </>
+
+            </div>
 
                   )
 }

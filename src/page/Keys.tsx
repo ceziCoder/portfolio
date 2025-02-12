@@ -52,7 +52,7 @@ export function Keys() {
     <>
       <Navbar />
 
-      <div className="py-2 mx-5 flex justify-end items-start  ">
+      <div className="py-2 mx-5 flex justify-end items-start overflow-hidden "  >
 
         <Modal>
 
