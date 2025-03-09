@@ -43,7 +43,7 @@ const images = [
 
 export const Electronics = () => {
   return (
-    <div className=" w-full h-screen overflow-auto  "
+    <div className=" w-full h-screen overflow-auto md:flex md:justify-center md:items-center "
       style={{
         backgroundImage: `url(${image6})`,
         backgroundSize: "cover",
