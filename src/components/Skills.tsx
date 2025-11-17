@@ -19,7 +19,7 @@ import img11 from '../public/rN.png'
 import img12 from '../public/expo.svg'
 import img13 from '../public/wp.png'
 import img14 from '../public/C.png'
-
+import img15 from '../public/rust.png'
 const langs: string | any = {
   en: { nativeName: 'English' },
   pl: { nativeName: 'polski' }
@@ -62,6 +62,11 @@ export const Skills = () => {
                 <li className='ml-2'>C</li>
                 <h2 className='ml-1'> -- 8%</h2>
               </span>
+              <span className='flex items-center text-m  m-2'>
+                <img src={img15} className='h-7 w-7' />
+                <li className='ml-2'>Rust</li>
+                <h2 className='ml-1'> -- 6%</h2>
+              </span>
 
               <span className='flex items-center text-m  m-2'>
                 <img src={img3} className='h-5 w-5' />
@@ -93,7 +98,7 @@ export const Skills = () => {
           <span className='flex items-center text-m m-2'>
             <img src={img5}className='h-6 w-6' />
             <li className='ml-4'>Linux</li>
-            <h2 className='ml-1'>--- 35%</h2>
+            <h2 className='ml-1'>--- 25%</h2>
           </span>
           <hr className='' />
           <span className='flex items-center text-m  m-2'>
