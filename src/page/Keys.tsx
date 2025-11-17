@@ -16,7 +16,8 @@ import image1 from '../public/4-.jpg';
 import image2 from '../public/2-.jpg';
 import image3 from '../public/3-.jpg';
 import image4 from '../public/5-.jpg';
-import image5 from '../public/7-.jpg'
+import image5 from '../public/7-.jpg';
+import image8 from '../public/8.jpg';
 import { Button } from "../components/Moving-border";
 
 export function Keys() {
@@ -46,6 +47,10 @@ export function Keys() {
       src: image5,
       description: "Launch",
     },
+    {
+      src: image8,
+      description: "Xhorse",
+    }
   ];
 
   return (
