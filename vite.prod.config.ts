@@ -6,8 +6,10 @@ import { splitVendorChunkPlugin } from 'vite'
 export default defineConfig({
 	plugins: [react(), splitVendorChunkPlugin()],
 	build: {
-        outDir: 'assets',
-		sourcemap: false,
+    outDir: 'dist',
+    assetsDir: 'assets',
+		sourcemap: false
+
 	},
-	
+
 })

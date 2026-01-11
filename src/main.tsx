@@ -10,9 +10,9 @@ import './i18n'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    
+
     <App />
-  
+
   </React.StrictMode>
 )
 
@@ -25,5 +25,3 @@ if (typeof window !== 'undefined')
     window.fetch('/', { headers });
   });
 }
-
-
